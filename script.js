@@ -295,17 +295,33 @@ function openModal(p) {
     });
 
     modal.classList.add('active');
-    modal.scrollTo(0,0);
+    modal.scrollTo(0, 0);
     document.body.style.overflow = 'hidden';
+
+    // Push a history entry so the back button closes the modal
+    history.pushState({ modal: p.id }, '', `#project-${p.id}`);
+}
+
+function closeModal() {
+    const modal = document.getElementById('projectModal');
+    modal.classList.remove('active');
+    document.body.style.overflow = '';
 }
 
 function initProjectDetail() {
-    const modal = document.getElementById('projectModal');
     const close = document.getElementById('modalClose');
-
     close.addEventListener('click', () => {
-        modal.classList.remove('active');
-        document.body.style.overflow = '';
+        closeModal();
+        // Navigate back to home hash cleanly
+        history.pushState(null, '', '#home');
+    });
+
+    // Handle browser back button / swipe back on mobile
+    window.addEventListener('popstate', (e) => {
+        const modal = document.getElementById('projectModal');
+        if (modal.classList.contains('active')) {
+            closeModal();
+        }
     });
 }
 
