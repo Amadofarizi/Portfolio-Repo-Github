@@ -304,8 +304,8 @@ h1, h2, h3, h4, h5, h6 { font-family: var(--font-display); font-weight: 700; lin
 
 /* ===== MARQUEE ===== */
 .marquee-wrapper { padding: 40px 0; border-top: 1px solid var(--gray-line); border-bottom: 1px solid var(--gray-line); overflow: hidden; background: #0a0a0a; }
-.marquee-track { display: flex; align-items: center; gap: 40px; white-space: nowrap; animation: marquee 20s linear infinite; }
-.marquee-track span { font-family: var(--font-display); font-size: 2rem; font-weight: 800; color: var(--gray-mute); transition: 0.3s; }
+.marquee-track { display: flex; align-items: center; white-space: nowrap; animation: marquee 40s linear infinite; }
+.marquee-track span { font-family: var(--font-display); font-size: 2rem; font-weight: 800; color: var(--gray-mute); transition: 0.3s; padding-right: 40px; }
 .marquee-track span.asterisk { color: var(--accent-red); font-size: 2.5rem; }
 .marquee-track span:hover { color: var(--text-light); }
 @keyframes marquee { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
@@ -478,8 +478,9 @@ h1, h2, h3, h4, h5, h6 { font-family: var(--font-display); font-weight: 700; lin
     }
     .sh-right { width: 100%; }
     .sh-title { font-size: clamp(1.8rem, 7vw, 2.5rem); }
-    .filters { gap: 8px; }
-    .filter-btn { font-size: 0.65rem; padding: 6px 12px; }
+    .filters { display: flex; flex-wrap: nowrap; overflow-x: auto; gap: 10px; padding-bottom: 12px; width: 100vw; margin-left: calc(-1 * var(--container-pad)); padding-left: var(--container-pad); padding-right: var(--container-pad); -webkit-overflow-scrolling: touch; scrollbar-width: none; }
+    .filters::-webkit-scrollbar { display: none; }
+    .filter-btn { flex: 0 0 auto; font-size: 0.75rem; padding: 10px 18px; }
 
     /* Works grid – single column */
     .works-grid { grid-template-columns: 1fr; gap: 48px; }
@@ -503,8 +504,10 @@ h1, h2, h3, h4, h5, h6 { font-family: var(--font-display); font-weight: 700; lin
     .ex-item h5 { font-size: 1.2rem; }
 
     /* Marquee */
-    .marquee-track span { font-size: 1.4rem; }
-    .marquee-track span.asterisk { font-size: 1.8rem; }
+    .marquee-wrapper { padding: 24px 0; }
+    .marquee-track { animation-duration: 20s; }
+    .marquee-track span { font-size: 1.1rem; padding-right: 20px; }
+    .marquee-track span.asterisk { font-size: 1.4rem; padding-right: 20px; }
 
     /* Contact */
     .contact-grid { grid-template-columns: 1fr; gap: 48px; }
