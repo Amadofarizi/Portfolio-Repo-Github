@@ -18,7 +18,7 @@ const projects = [
     {
         id: 'bankbjb',
         client: 'Bank BJB',
-        title: 'Visual 360°',
+        title: '360° Banking Promotional Campaign',
         category: 'campaign',
         type: 'Banking Campaign',
         year: '2026',
@@ -35,7 +35,7 @@ const projects = [
         year: '2026',
         role: 'Visual Direction',
         desc: 'This project showcases a series of fashion design works developed for a range of local and international brands. The scope includes concept development, visual direction, and execution across apparel design, layout composition, and supporting campaign materials.',
-        gallery: [400, 300, 360, 280, 420, 300]
+        gallery: [400, 300, 360, 280, 420, 300, 380, 340]
     },
     {
         id: 'suaraperempuan',
