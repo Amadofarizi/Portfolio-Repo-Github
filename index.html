@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M. Fariz Nabil Heryana | Graphic &amp; Visual Designer - Junior Art Director</title>
+    <meta name="description"
+        content="Portfolio of Muhammad Fariz Nabil Heryana — Graphic &amp; Visual Designer - Junior Art Director based in Bandung.">
+    
+    <!-- Instant Session Loader Check & Fail-Safe Fallback -->
+    <script>
+        if (sessionStorage.getItem('hasLoaded') || sessionStorage.getItem('mfnh_site_loaded')) {
+            document.documentElement.classList.add('already-loaded');
+        } else {
+            // Absolute fail-safe: forces preloader to dismiss within 2.2s even if network hangs
+            window.__loaderTimeout = setTimeout(function() {
+                var l = document.getElementById('loader');
+                if (l && !l.classList.contains('hide')) {
+                    sessionStorage.setItem('hasLoaded', 'true');
+                    sessionStorage.setItem('mfnh_site_loaded', 'true');
+                    l.classList.add('hide');
+                    setTimeout(function() { l.style.display = 'none'; }, 400);
+                }
+            }, 2200);
+        }
+    </script>
+    <style>
+        html.already-loaded #loader, html.already-loaded .loader { display: none !important; }
+    </style>
+
+    <!-- Google Fonts: Syne for display, Inter for body -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor-dot" id="cursorDot">
+        <div class="cursor-icon"></div>
+    </div>
+
+    <!-- Loader (Only runs once on initial session entry) -->
+    <div id="loader" class="loader">
+        <div class="loader-marquee">
+            <span class="loader-marquee-inner">
+                LOADING <span>LOADING</span> LOADING <span>LOADING</span>
+            </span>
+        </div>
+        <div class="loader-pct" id="loaderPct">0%</div>
+    </div>
+
+    <!-- Navbar -->
+    <nav id="navbar">
+        <div class="nav-inner container">
+            <a href="#home" class="logo">FARIZ<br>HERYANA</a>
+            <ul class="nav-links">
+                <li><a href="#work" data-text="Selected Works">Selected Works</a></li>
+                <li><a href="#about" data-text="Profile">Profile</a></li>
+                <li><a href="#services" data-text="Expertise">Expertise</a></li>
+            </ul>
+            <a href="#contact" class="nav-cta">
+                <span>Start a Project</span>
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 11L11 1M11 1H1M11 1V11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </a>
+            <div class="burger" id="burger">
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <ul class="mobile-links">
+            <li><a href="#home">Intro</a></li>
+            <li><a href="#work">Works</a></li>
+            <li><a href="#about">Profile</a></li>
+            <li><a href="#services">Expertise</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- HERO SECTION WITH TOP BIO & REFINED 3-COLUMN SPLIT -->
+    <section id="home" class="hero">
+        <!-- Premium Garnish -->
+        <div class="garnish-crop top-left" aria-hidden="true"></div>
+        <div class="garnish-crop top-right" aria-hidden="true"></div>
+        <div class="garnish-badge" aria-hidden="true">
+            <svg viewBox="0 0 100 100">
+                <path id="curve" d="M 50 50 m -40, 0 a 40,40 0 1,1 80,0 a 40,40 0 1,1 -80,0" fill="none" />
+                <text font-family="Syne" font-size="10.5" font-weight="700" letter-spacing="1.5" fill="currentColor">
+                    <textPath href="#curve">Jr Art Direct &amp; Graphic Designer • </textPath>
+                </text>
+            </svg>
+        </div>
+
+        <div class="hero-watermark" aria-hidden="true">DESIGNER &amp;<br>DIRECTOR</div>
+
+        <div class="container hero-container">
+            <!-- Top Availability Row -->
+            <div class="hero-top">
+                <span class="hero-eyebrow">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                    Based in Bandung, ID
+                </span>
+                <span class="hero-eyebrow hero-availability">
+                    <span class="status-dot"></span> Available 2026
+                </span>
+            </div>
+
+            <!-- Main Oversized Editorial Headline -->
+            <div class="hero-headline-wrapper">
+                <h1 class="hero-title" data-animate>
+                    <span class="line-1">MUHAMMAD</span>
+                    <span class="line-2 indent"><span class="outline">FARIZ</span> NABIL</span>
+                    <span class="line-3">HERYANA</span>
+                </h1>
+            </div>
+
+            <!-- Introduction Bio / Statement -->
+            <div class="hero-bottom" data-animate data-delay="1">
+                <div class="hero-abstract-shape">
+                    <!-- Geometric stamp -->
+                    <svg width="40" height="40" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M50 0L60.5 39.5L100 50L60.5 60.5L50 100L39.5 60.5L0 50L39.5 39.5L50 0Z" fill="var(--accent-green)"/>
+                    </svg>
+                </div>
+                <div class="hero-desc-wrap">
+                    <p class="hero-desc">
+                        A Graphic &amp; Visual Designer and Junior Art Director specialized in editorial design, 360° brand campaigns, and high-impact visual identities. I engineer high-contrast, conceptually driven aesthetics that fuse strategic direction with bold execution.
+                    </p>
+                </div>
+            </div>
+
+            <!-- REFINED 3-COLUMN SPLIT-SCREEN SHOWCASE -->
+            <div class="hero-showcase" data-animate data-delay="2">
+                <div class="hero-columns-clean" id="heroColumns">
+
+                    <!-- Column 1: Art Direction -->
+                    <a href="art-direction.html" class="hcol-clean" id="heroCol1" data-category="art-direction">
+                        <div class="hcol-slider" id="slider-art"></div>
+                        <div class="hcol-overlay"></div>
+                        <div class="hcol-content">
+                            <span class="hcol-tag">01 // Domain</span>
+                            <h2 class="hcol-title">Art Direction<br>&amp; Campaigns</h2>
+                            <p class="hcol-desc">Music visual identity, editorial campaigns &amp; high-concept creative direction</p>
+                            <span class="hcol-btn">
+                                <span>Explore Domain</span>
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                            </span>
+                        </div>
+                    </a>
+
+                    <!-- Column 2: Graphic & Illustration -->
+                    <a href="graphic-illustration.html" class="hcol-clean" id="heroCol2" data-category="graphic-illustration">
+                        <div class="hcol-slider" id="slider-graphic"></div>
+                        <div class="hcol-overlay"></div>
+                        <div class="hcol-content">
+                            <span class="hcol-tag">02 // Domain</span>
+                            <h2 class="hcol-title">Graphic &amp;<br>Illustration</h2>
+                            <p class="hcol-desc">Brand systems, 360° event production, festival identities &amp; promotional craft</p>
+                            <span class="hcol-btn">
+                                <span>Explore Domain</span>
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                            </span>
+                        </div>
+                    </a>
+
+                    <!-- Column 3: Apparel Design (Category name: Apparel Design strictly) -->
+                    <a href="apparel-design.html" class="hcol-clean" id="heroCol3" data-category="apparel-design">
+                        <div class="hcol-slider" id="slider-apparel"></div>
+                        <div class="hcol-overlay"></div>
+                        <div class="hcol-content">
+                            <span class="hcol-tag">03 // Domain</span>
+                            <h2 class="hcol-title">Apparel<br>Design</h2>
+                            <p class="hcol-desc">Textile graphics, placement prints, streetwear mockups &amp; custom merchandise typography</p>
+                            <span class="hcol-btn">
+                                <span>Explore Domain</span>
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                            </span>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SELECTED WORKS (4-COLUMN COMPACT GRID WITH DIRECT POP-UP MODAL TRIGGER) -->
+    <section id="work" class="section works-section">
+        <!-- Premium Garnish -->
+        <div class="garnish-label" aria-hidden="true">
+            <div class="gl-bar"></div>
+            <div class="gl-bar thick"></div>
+            <div class="gl-bar"></div>
+            <span>ARCHIVE // 01</span>
+        </div>
+
+        <div class="container">
+            <div class="section-header" data-animate>
+                <div class="sh-left">
+                    <span class="sh-num">( 01 )</span>
+                    <h2 class="sh-title">Selected Works</h2>
+                </div>
+                <div class="sh-right">
+                    <div class="filters">
+                        <button class="filter-btn active" data-filter="all">All</button>
+                        <button class="filter-btn" data-filter="art-direction">Art Direction</button>
+                        <button class="filter-btn" data-filter="graphic-illustration">Graphic &amp; Illustration</button>
+                        <button class="filter-btn" data-filter="apparel-design">Apparel Design</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 4-Column Grid: Clicking opens modal pop-up table directly -->
+            <div class="works-grid-4col" id="projectGrid">
+                <!-- Injected via script.js -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section about-section">
+        <!-- Premium Garnish -->
+        <div class="garnish-geo" aria-hidden="true">
+            <div class="gg-circle"></div>
+            <div class="gg-square"></div>
+        </div>
+
+        <div class="container">
+            <div class="section-header" data-animate>
+                <div class="sh-left">
+                    <span class="sh-num">( 02 )</span>
+                    <h2 class="sh-title">Creative Profile</h2>
+                </div>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-visual" data-animate>
+                    <div class="av-frame">
+                        <img src="Assets/aboutme/profile.svg" alt="M Fariz Nabil Heryana" class="av-img">
+                        <div class="av-stamp">
+                            <svg viewBox="0 0 100 100">
+                                <circle cx="50" cy="50" r="48" fill="none" stroke="currentColor" stroke-width="2" stroke-dasharray="10 5"/>
+                                <text x="50" y="55" font-family="Syne" font-size="14" font-weight="700" text-anchor="middle" fill="currentColor">EST. 2001</text>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-content" data-animate data-delay="1">
+                    <h3 class="about-statement">
+                        "I believe design is not just about aesthetics—it is a visual language that provokes emotion, drives narrative, and demands attention."
+                    </h3>
+                    <p class="about-text">
+                        I design and develop visual systems for brand campaigns, translating strategy into clear and impactful communication. My work bridges the gap between high-end editorial aesthetics and practical, real-world campaign performance. 
+                    </p>
+                    <p class="about-text">
+                        By embracing high-contrast compositions, oversized typography, and unexpected modular layouts, I ensure that every project feels curated, premium, and inherently memorable.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-num">3+</span>
+                            <span class="stat-lab">Years Exp.</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-num">50+</span>
+                            <span class="stat-lab">Projects</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-num">BDG</span>
+                            <span class="stat-lab">Location</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPERTISE & EXPERIENCE -->
+    <section id="services" class="section expertise-section">
+        <div class="container">
+            <div class="section-header" data-animate>
+                <div class="sh-left">
+                    <span class="sh-num">( 03 )</span>
+                    <h2 class="sh-title">Capabilities</h2>
+                </div>
+            </div>
+
+            <div class="expertise-grid">
+                <!-- Services Column -->
+                <div class="ex-col">
+                    <h4 class="ex-col-title">Services</h4>
+                    <ul class="ex-list" id="servicesList">
+                        <li class="ex-item" data-animate>
+                            <div class="ex-item-head">
+                                <h5>Brand &amp; Identity</h5>
+                                <span>01</span>
+                            </div>
+                            <p>Brand strategy, logo design, visual identity systems, and comprehensive brand guidelines.</p>
+                        </li>
+                        <li class="ex-item" data-animate>
+                            <div class="ex-item-head">
+                                <h5>Campaign Visuals</h5>
+                                <span>02</span>
+                            </div>
+                            <p>Key visual development, multi-platform adaptation, and striking marketing assets.</p>
+                        </li>
+                        <li class="ex-item" data-animate>
+                            <div class="ex-item-head">
+                                <h5>Social Media Direction</h5>
+                                <span>03</span>
+                            </div>
+                            <p>Content visual direction, layout systems, and cohesive platform rollout.</p>
+                        </li>
+                        <li class="ex-item" data-animate>
+                            <div class="ex-item-head">
+                                <h5>Editorial &amp; Promo</h5>
+                                <span>04</span>
+                            </div>
+                            <p>Print materials, digital ads, product promotions, and event visual identities.</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Experience Column -->
+                <div class="ex-col">
+                    <h4 class="ex-col-title">Experience</h4>
+                    <ul class="ex-list" id="experienceList">
+                        <li class="ex-item" data-animate data-delay="1">
+                            <div class="ex-item-head">
+                                <h5>Graphic Designer</h5>
+                                <span>2025</span>
+                            </div>
+                            <span class="ex-company">PT Cerita Teman Terbaik</span>
+                            <p>Brand identity, 360° campaign visual design, and promotional design.</p>
+                        </li>
+                        <li class="ex-item" data-animate data-delay="1">
+                            <div class="ex-item-head">
+                                <h5>Junior Art Director</h5>
+                                <span>2021</span>
+                            </div>
+                            <span class="ex-company">Respound.inc Records</span>
+                            <p>Visual identity, artwork design, and music video art direction.</p>
+                        </li>
+                        <li class="ex-item" data-animate data-delay="1">
+                            <div class="ex-item-head">
+                                <h5>Graphic &amp; Sound Designer</h5>
+                                <span>2025</span>
+                            </div>
+                            <span class="ex-company">Big Good Studio</span>
+                            <p>Game layout, UI implementation, and cross-team collaboration.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CLIENT MARQUEE -->
+    <div class="marquee-wrapper">
+        <div class="marquee-track">
+            <span>BIOFARMA</span> <span class="asterisk">*</span>
+            <span>BANK BJB</span> <span class="asterisk">*</span>
+            <span>RTSR</span> <span class="asterisk">*</span>
+            <span>BIG GOOD STUDIO</span> <span class="asterisk">*</span>
+            <span>XL</span> <span class="asterisk">*</span>
+            <span>IM3</span> <span class="asterisk">*</span>
+            <span>TELKOMSEL</span> <span class="asterisk">*</span>
+            <span>IMPARTAIRIAL</span> <span class="asterisk">*</span>
+            <span>RESPOUND.INC RECORDS</span> <span class="asterisk">*</span>
+            <span>GOPAY</span> <span class="asterisk">*</span>
+            <span>AXIS</span> <span class="asterisk">*</span>
+            <span>SMARTFREN</span> <span class="asterisk">*</span>
+            <span>WHOOSH</span> <span class="asterisk">*</span>
+            
+            <!-- Clone for loop -->
+            <span>BIOFARMA</span> <span class="asterisk">*</span>
+            <span>BANK BJB</span> <span class="asterisk">*</span>
+            <span>RTSR</span> <span class="asterisk">*</span>
+            <span>BIG GOOD STUDIO</span> <span class="asterisk">*</span>
+            <span>XL</span> <span class="asterisk">*</span>
+            <span>IM3</span> <span class="asterisk">*</span>
+            <span>TELKOMSEL</span> <span class="asterisk">*</span>
+            <span>IMPARTAIRIAL</span> <span class="asterisk">*</span>
+            <span>RESPOUND.INC RECORDS</span> <span class="asterisk">*</span>
+            <span>GOPAY</span> <span class="asterisk">*</span>
+            <span>AXIS</span> <span class="asterisk">*</span>
+            <span>SMARTFREN</span> <span class="asterisk">*</span>
+            <span>WHOOSH</span> <span class="asterisk">*</span>
+        </div>
+    </div>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact-section">
+        <!-- Premium Garnish -->
+        <div class="garnish-line-v" aria-hidden="true"></div>
+
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-left" data-animate>
+                    <span class="sh-num">( 04 )</span>
+                    <h2 class="contact-title">Let's build<br>something<br><span class="outline-light">iconic.</span></h2>
+                    <div class="contact-stamp">
+                        <svg width="80" height="80" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M50 0L100 50L50 100L0 50Z" fill="none" stroke="var(--accent-red)" stroke-width="2"/>
+                            <circle cx="50" cy="50" r="10" fill="var(--accent-red)"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="contact-right" data-animate data-delay="1">
+                    <p class="contact-desc">
+                        Open for new opportunities, creative collaborations, and art direction inquiries.
+                    </p>
+                    <div class="contact-links">
+                        <a href="mailto:mfarizn01@gmail.com" class="c-link">
+                            <span class="c-link-label">Email</span>
+                            <span class="c-link-val">mfarizn01@gmail.com</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="https://wa.me/6283100610025" target="_blank" class="c-link">
+                            <span class="c-link-label">WhatsApp</span>
+                            <span class="c-link-val">+62 831 0061 0025</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="https://www.instagram.com/akutehamado" target="_blank" class="c-link">
+                            <span class="c-link-label">Instagram</span>
+                            <span class="c-link-val">@akutehamado</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/muhammad-fariz-nabil-heryana-742bb1410/" target="_blank" class="c-link">
+                            <span class="c-link-label">LinkedIn</span>
+                            <span class="c-link-val">Connect</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-inner">
+            <div class="f-logo">MFNH. &copy; 2026</div>
+            <div class="f-info">Bandung, West Java</div>
+            <div class="f-tag">Graphic &amp; Visual Designer - Junior Art Director</div>
+        </div>
+    </footer>
+
+    <!-- Dedicated Dynamic Pop-Up Modal Container -->
+    <div class="project-modal" id="projectModal" aria-hidden="true"></div>
+
+    <script src="projects-data.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

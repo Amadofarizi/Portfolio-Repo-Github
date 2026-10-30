@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kickfest Festival — Graphic & Illustration — M. Fariz Nabil Heryana</title>
+    <meta name="description"
+        content="Kickfest Festival 360° visual identity by M. Fariz Nabil Heryana — Event Production & Social Media Promotion, Bandung 2026.">
+
+    <!-- Instant Session Loader Check & Fail-Safe Fallback -->
+    <script>
+        if (sessionStorage.getItem('hasLoaded') || sessionStorage.getItem('mfnh_site_loaded')) {
+            document.documentElement.classList.add('already-loaded');
+        } else {
+            // Absolute fail-safe: forces preloader to dismiss within 2.2s even if network hangs
+            window.__loaderTimeout = setTimeout(function() {
+                var l = document.getElementById('loader');
+                if (l && !l.classList.contains('hide')) {
+                    sessionStorage.setItem('hasLoaded', 'true');
+                    sessionStorage.setItem('mfnh_site_loaded', 'true');
+                    l.classList.add('hide');
+                    setTimeout(function() { l.style.display = 'none'; }, 400);
+                }
+            }, 2200);
+        }
+    </script>
+    <style>
+        html.already-loaded #loader, html.already-loaded .loader { display: none !important; }
+    </style>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor-dot" id="cursorDot"><div class="cursor-icon"></div></div>
+
+    <!-- Loader -->
+    <div id="loader" class="loader">
+        <div class="loader-marquee">
+            <span class="loader-marquee-inner">LOADING <span>LOADING</span> LOADING <span>LOADING</span></span>
+        </div>
+        <div class="loader-pct" id="loaderPct">0%</div>
+    </div>
+
+    <!-- Navbar -->
+    <nav id="navbar">
+        <div class="nav-inner container">
+            <a href="index.html#home" class="logo">FARIZ<br>HERYANA</a>
+            <ul class="nav-links">
+                <li><a href="index.html#work" data-text="Selected Works">Selected Works</a></li>
+                <li><a href="index.html#about" data-text="Profile">Profile</a></li>
+                <li><a href="index.html#services" data-text="Expertise">Expertise</a></li>
+            </ul>
+            <a href="index.html#contact" class="nav-cta">
+                <span>Start a Project</span>
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 11L11 1M11 1H1M11 1V11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </a>
+            <div class="burger" id="burger"><span></span><span></span></div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <ul class="mobile-links">
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="index.html#work">Works</a></li>
+            <li><a href="index.html#about">Profile</a></li>
+            <li><a href="index.html#services">Expertise</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- SUB-PAGE HERO -->
+    <section class="subpage-hero">
+        <div class="subpage-hero-bg"></div>
+        <div class="subpage-watermark">KICKFEST</div>
+        <div class="container subpage-hero-content">
+            <a href="graphic-illustration.html" class="subpage-back">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+                Back to Graphic &amp; Illustration
+            </a>
+            <div class="subpage-eyebrow">
+                <span class="subpage-eyebrow-line"></span>
+                <span>02 // Graphic &amp; Illustration — Featured Case Study</span>
+            </div>
+            <h1 class="subpage-title" data-animate>
+                KICKFEST<br>
+                <span class="outline">FESTIVAL</span>
+            </h1>
+            <p class="subpage-desc" data-animate data-delay="1">
+                360° visual identity for Kickfest Bandung, December 2026. Select a creative domain below to explore the full asset suite — from on-ground event production to digital promotion and social media campaigns.
+            </p>
+            <!-- Project meta -->
+            <div class="modal-specs-table" style="margin-top:32px;max-width:640px;" data-animate data-delay="2">
+                <div class="modal-spec-item"><span class="modal-spec-label">Client</span><span class="modal-spec-val">Kickfest</span></div>
+                <div class="modal-spec-item"><span class="modal-spec-label">Year</span><span class="modal-spec-val">2026</span></div>
+                <div class="modal-spec-item"><span class="modal-spec-label">Location</span><span class="modal-spec-val">Bandung, West Java</span></div>
+                <div class="modal-spec-item"><span class="modal-spec-label">Role</span><span class="modal-spec-val">360° Visual Identity &amp; Art Direction</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- KICKFEST TWO-CARD SUB-LANDING -->
+    <section class="section" style="padding-top:0;">
+        <div class="kickfest-sub-grid">
+
+            <!-- Card 01: Event Production -->
+            <div class="kickfest-sub-card" id="kscProduksi" data-sub="kickfest-produksi">
+                <div class="ksc-bg">
+                    <img src="Assets/Kickfest Festival/01_EVENT_PRODUCTION/mockup produksi_Artboard 1.svg" alt="Kickfest Event Production">
+                </div>
+                <div class="ksc-overlay"></div>
+                <div class="ksc-content">
+                    <span class="ksc-tag">01 // Environmental Design</span>
+                    <h2 class="ksc-title">Event<br>Production</h2>
+                    <p class="ksc-desc">Comprehensive spatial design and on-site production management—from 3D motion animations to large-scale stage design, entrance gates, and immersive field collateral.</p>
+                    <span class="ksc-cta">
+                        View Production Assets
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </span>
+                </div>
+            </div>
+
+            <!-- Card 02: Social Media Content -->
+            <div class="kickfest-sub-card" id="kscSosmed" data-sub="kickfest-sosmed">
+                <div class="ksc-bg">
+                    <img src="Assets/Kickfest Festival/02_PROMOTION_&_DIGITAL/Mockup Sosmed Kickfest-01.svg" alt="Kickfest Social Media Promotion">
+                </div>
+                <div class="ksc-overlay"></div>
+                <div class="ksc-content">
+                    <span class="ksc-tag">02 // Digital Promotion</span>
+                    <h2 class="ksc-title">Social Media<br>Content</h2>
+                    <p class="ksc-desc">End-to-end digital campaign and social branding—dynamic Instagram feed grid architecture, interactive stories, and promotional collateral driving high festival engagement.</p>
+                    <span class="ksc-cta">
+                        View Promotion Assets
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-inner">
+            <div class="f-logo">MFNH. &copy; 2026</div>
+            <div class="f-info">Bandung, West Java</div>
+            <div class="f-tag">Graphic &amp; Visual Designer - Junior Art Director</div>
+        </div>
+    </footer>
+
+    <!-- Dedicated Pop-Up Modal Container -->
+    <div class="project-modal" id="projectModal" aria-hidden="true"></div>
+
+    <script src="projects-data.js"></script>
+    <script src="shared.js"></script>
+    <script>
+        /* Kickfest sub-card → open sub-category modal */
+        document.querySelectorAll('.kickfest-sub-card').forEach(function(card) {
+            card.addEventListener('click', function() {
+                var subId = card.dataset.sub;
+                if (typeof MFNH_PROJECTS === 'undefined') return;
+                var kickfest = MFNH_PROJECTS['kickfest'];
+                if (!kickfest || !kickfest.subCategories) return;
+                var sub = kickfest.subCategories.find(function(s) { return s.id === subId; });
+                if (!sub) return;
+                openSubCategoryModal(sub);
+            });
+        });
+
+        function openSubCategoryModal(sub) {
+            var modal = document.getElementById('projectModal');
+            if (!modal) {
+                modal = document.createElement('div');
+                modal.id = 'projectModal';
+                modal.className = 'project-modal';
+                document.body.appendChild(modal);
+            }
+
+            var ICO_BACK  = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>';
+            var ICO_CLOSE = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6L6 18M6 6l12 12"/></svg>';
+
+            var sectionsHtml = '';
+            (sub.sections || []).forEach(function(sec) {
+                var rowClass = sec.layout === '3col' ? 'modal-asset-row-3col' : 'modal-asset-row-2col';
+                var imgs = sec.images.map(function(img) {
+                    return '<div class="modal-asset-card"><img src="' + img.src + '" alt="' + img.alt + '" loading="lazy"></div>';
+                }).join('');
+                sectionsHtml += '<div class="modal-asset-section"><h3 class="modal-asset-section-title">' + sec.title + '</h3><p class="modal-asset-section-desc">' + sec.desc + '</p><div class="' + rowClass + '">' + imgs + '</div></div>';
+            });
+
+            modal.innerHTML =
+                '<div class="modal-nav-bar">' +
+                    '<button class="modal-back-btn" id="modalBackBtn">' + ICO_BACK + '<span>Back to Kickfest</span></button>' +
+                    '<div class="modal-category-tag">Kickfest // ' + sub.label + '</div>' +
+                    '<button class="modal-close-icon" id="modalCloseBtn"><span>Close</span>' + ICO_CLOSE + '</button>' +
+                '</div>' +
+                '<div class="modal-container">' +
+                    '<div class="modal-hero-banner"><img src="' + sub.thumb + '" alt="' + sub.label + ' Key Visual"></div>' +
+                    '<div class="modal-header-block"><h2 class="modal-project-title">Kickfest &mdash; ' + sub.label + '</h2><p class="modal-subtitle">' + sub.subtitle + '</p></div>' +
+                    '<div class="modal-specs-table">' +
+                        '<div class="modal-spec-item"><span class="modal-spec-label">Client</span><span class="modal-spec-val">Kickfest</span></div>' +
+                        '<div class="modal-spec-item"><span class="modal-spec-label">Year</span><span class="modal-spec-val">2026</span></div>' +
+                        '<div class="modal-spec-item"><span class="modal-spec-label">Location</span><span class="modal-spec-val">Bandung</span></div>' +
+                        '<div class="modal-spec-item"><span class="modal-spec-label">Discipline</span><span class="modal-spec-val">Graphic &amp; Illustration</span></div>' +
+                    '</div>' +
+                    '<p class="modal-desc-text">' + sub.desc + '</p>' +
+                    '<div class="modal-asset-grid">' + sectionsHtml + '</div>' +
+                    '<div class="modal-bottom-bar"><button class="modal-bottom-close-btn" id="modalBottomCloseBtn">' + ICO_BACK + '<span>Back / Close</span></button></div>' +
+                '</div>';
+
+            document.getElementById('modalBackBtn').addEventListener('click', closeSubModal);
+            document.getElementById('modalCloseBtn').addEventListener('click', closeSubModal);
+            document.getElementById('modalBottomCloseBtn').addEventListener('click', closeSubModal);
+
+            /* Image lightbox is handled by the capture-phase delegate in shared.js */
+
+            modal.classList.add('active');
+            modal.scrollTo(0, 0);
+            document.body.style.overflow = 'hidden';
+            history.pushState({ kickfestSub: sub.id }, '', '#' + sub.id);
+        }
+
+        function closeSubModal() {
+            var modal = document.getElementById('projectModal');
+            if (!modal) return;
+            var lbModal = document.getElementById('imageLightboxModal');
+            if (lbModal && lbModal.classList.contains('active')) {
+                lbModal.classList.remove('active');
+                document.body.style.overflow = 'hidden';
+                return;
+            }
+            modal.classList.remove('active');
+            document.body.style.overflow = '';
+            if (window.location.hash.startsWith('#kickfest-')) {
+                history.pushState(null, '', window.location.pathname);
+            }
+        }
+
+        document.addEventListener('click', function(e) {
+            var m = document.getElementById('projectModal');
+            if (m && m.classList.contains('active') && e.target === m) closeSubModal();
+        });
+        document.addEventListener('keydown', function(e) {
+            var lbModal = document.getElementById('imageLightboxModal');
+            if (lbModal && lbModal.classList.contains('active')) {
+                if (e.key === 'Escape') { closeImageLightbox(); document.body.style.overflow = 'hidden'; return; }
+                if (e.key === 'ArrowLeft')  { lbModal.querySelector('#ilmPrevBtn') && lbModal.querySelector('#ilmPrevBtn').click(); return; }
+                if (e.key === 'ArrowRight') { lbModal.querySelector('#ilmNextBtn') && lbModal.querySelector('#ilmNextBtn').click(); return; }
+                return;
+            }
+            if (e.key === 'Escape') closeSubModal();
+        });
+        window.addEventListener('popstate', function() { closeSubModal(); });
+
+        if (window.location.hash) {
+            var hash = window.location.hash.replace('#', '');
+            if (hash.startsWith('kickfest-')) {
+                setTimeout(function() {
+                    var card = document.querySelector('[data-sub="' + hash + '"]');
+                    if (card) card.click();
+                }, 400);
+            }
+        }
+    </script>
+</body>
+
+</html>

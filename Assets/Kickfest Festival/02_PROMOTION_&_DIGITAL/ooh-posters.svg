@@ -1,0 +1,25 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <rect width="1200" height="800" fill="#0a0a0a"/>
+  <rect x="40" y="40" width="1120" height="720" fill="none" stroke="rgba(244,244,240,0.1)"/>
+  <text x="70" y="90" font-family="'Inter', sans-serif" font-size="13" font-weight="700" fill="#8A8A85" letter-spacing="3">02 // SOCIAL MEDIA &amp; PROMOTION</text>
+  <text x="70" y="140" font-family="'Syne', sans-serif" font-size="36" font-weight="800" fill="#F4F4F0">OOH CAMPAIGN POSTERS</text>
+  <g transform="translate(180, 220)">
+    <rect width="240" height="420" fill="#161616" stroke="rgba(244,244,240,0.2)"/>
+    <text x="120" y="100" font-family="'Syne', sans-serif" font-size="28" font-weight="800" fill="#F4F4F0" text-anchor="middle">KICKFEST</text>
+    <text x="120" y="240" font-family="'Syne', sans-serif" font-size="70" font-weight="800" fill="none" stroke="#F4F4F0" stroke-width="2" text-anchor="middle">'25</text>
+    <text x="120" y="360" font-family="'Inter', sans-serif" font-size="12" fill="#8A8A85" text-anchor="middle">SERIES 01 // TEASER</text>
+  </g>
+  <g transform="translate(480, 220)">
+    <rect width="240" height="420" fill="#161616" stroke="rgba(244,244,240,0.2)"/>
+    <text x="120" y="100" font-family="'Syne', sans-serif" font-size="28" font-weight="800" fill="#F4F4F0" text-anchor="middle">LINEUP</text>
+    <text x="120" y="180" font-family="'Inter', sans-serif" font-size="13" font-weight="600" fill="#F4F4F0" text-anchor="middle">50+ BANDS</text>
+    <text x="120" y="210" font-family="'Inter', sans-serif" font-size="13" font-weight="600" fill="#F4F4F0" text-anchor="middle">100+ BRANDS</text>
+    <text x="120" y="360" font-family="'Inter', sans-serif" font-size="12" fill="#8A8A85" text-anchor="middle">SERIES 02 // ROSTER</text>
+  </g>
+  <g transform="translate(780, 220)">
+    <rect width="240" height="420" fill="#161616" stroke="rgba(244,244,240,0.2)"/>
+    <text x="120" y="100" font-family="'Syne', sans-serif" font-size="28" font-weight="800" fill="#F4F4F0" text-anchor="middle">TICKETS</text>
+    <text x="120" y="200" font-family="'Syne', sans-serif" font-size="24" font-weight="800" fill="#FFF" text-anchor="middle">NOW ON SALE</text>
+    <text x="120" y="360" font-family="'Inter', sans-serif" font-size="12" fill="#8A8A85" text-anchor="middle">SERIES 03 // TICKETING</text>
+  </g>
+</svg>
