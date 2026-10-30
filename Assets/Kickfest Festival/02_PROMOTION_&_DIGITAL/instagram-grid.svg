@@ -1,0 +1,21 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <rect width="1200" height="800" fill="#0a0a0a"/>
+  <rect x="40" y="40" width="1120" height="720" fill="none" stroke="rgba(244,244,240,0.1)"/>
+  <text x="70" y="90" font-family="'Inter', sans-serif" font-size="13" font-weight="700" fill="#8A8A85" letter-spacing="3">02 // SOCIAL MEDIA &amp; PROMOTION</text>
+  <text x="70" y="140" font-family="'Syne', sans-serif" font-size="36" font-weight="800" fill="#F4F4F0">INSTAGRAM FEED GRID ARCHITECTURE</text>
+  <g transform="translate(360, 200)">
+    <!-- 9 tiles -->
+    <rect x="0" y="0" width="150" height="150" fill="#161616" stroke="#000" stroke-width="4"/>
+    <rect x="160" y="0" width="150" height="150" fill="#1a1a1a" stroke="#000" stroke-width="4"/>
+    <rect x="320" y="0" width="150" height="150" fill="#161616" stroke="#000" stroke-width="4"/>
+    
+    <rect x="0" y="160" width="150" height="150" fill="#1a1a1a" stroke="#000" stroke-width="4"/>
+    <rect x="160" y="160" width="150" height="150" fill="#222" stroke="#000" stroke-width="4"/>
+    <text x="235" y="245" font-family="'Syne', sans-serif" font-size="20" font-weight="800" fill="#F4F4F0" text-anchor="middle">LINEUP</text>
+    <rect x="320" y="160" width="150" height="150" fill="#1a1a1a" stroke="#000" stroke-width="4"/>
+    
+    <rect x="0" y="320" width="150" height="150" fill="#161616" stroke="#000" stroke-width="4"/>
+    <rect x="160" y="320" width="150" height="150" fill="#1a1a1a" stroke="#000" stroke-width="4"/>
+    <rect x="320" y="320" width="150" height="150" fill="#161616" stroke="#000" stroke-width="4"/>
+  </g>
+</svg>

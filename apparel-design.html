@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apparel Design — M. Fariz Nabil Heryana</title>
+    <meta name="description"
+        content="Textile graphics, placement prints, streetwear mockups, and merchandise typography by M. Fariz Nabil Heryana — based in Bandung.">
+
+    <!-- Instant Session Loader Check & Fail-Safe Fallback -->
+    <script>
+        if (sessionStorage.getItem('hasLoaded') || sessionStorage.getItem('mfnh_site_loaded')) {
+            document.documentElement.classList.add('already-loaded');
+        } else {
+            // Absolute fail-safe: forces preloader to dismiss within 2.2s even if network hangs
+            window.__loaderTimeout = setTimeout(function() {
+                var l = document.getElementById('loader');
+                if (l && !l.classList.contains('hide')) {
+                    sessionStorage.setItem('hasLoaded', 'true');
+                    sessionStorage.setItem('mfnh_site_loaded', 'true');
+                    l.classList.add('hide');
+                    setTimeout(function() { l.style.display = 'none'; }, 400);
+                }
+            }, 2200);
+        }
+    </script>
+    <style>
+        html.already-loaded #loader, html.already-loaded .loader { display: none !important; }
+    </style>
+
+    <!-- Google Fonts: Syne for display, Inter for body -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor-dot" id="cursorDot"><div class="cursor-icon"></div></div>
+
+    <!-- Loader (Only runs once on initial session entry) -->
+    <div id="loader" class="loader">
+        <div class="loader-marquee">
+            <span class="loader-marquee-inner">LOADING <span>LOADING</span> LOADING <span>LOADING</span></span>
+        </div>
+        <div class="loader-pct" id="loaderPct">0%</div>
+    </div>
+
+    <!-- Navbar -->
+    <nav id="navbar">
+        <div class="nav-inner container">
+            <a href="index.html#home" class="logo">FARIZ<br>HERYANA</a>
+            <ul class="nav-links">
+                <li><a href="index.html#work" data-text="Selected Works">Selected Works</a></li>
+                <li><a href="index.html#about" data-text="Profile">Profile</a></li>
+                <li><a href="index.html#services" data-text="Expertise">Expertise</a></li>
+            </ul>
+            <a href="index.html#contact" class="nav-cta">
+                <span>Start a Project</span>
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 11L11 1M11 1H1M11 1V11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </a>
+            <div class="burger" id="burger"><span></span><span></span></div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <ul class="mobile-links">
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="index.html#work">Works</a></li>
+            <li><a href="index.html#about">Profile</a></li>
+            <li><a href="index.html#services">Expertise</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- SUB-PAGE HERO -->
+    <section class="subpage-hero">
+        <div class="subpage-hero-bg"></div>
+        <div class="subpage-watermark">APPAREL</div>
+        <div class="container subpage-hero-content">
+            <a href="index.html" class="subpage-back">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+                Back to Portfolio
+            </a>
+            <div class="subpage-eyebrow">
+                <span class="subpage-eyebrow-line"></span>
+                <span>03 // Apparel Design</span>
+            </div>
+            <h1 class="subpage-title" data-animate>
+                APPAREL<br>
+                <span class="outline">DESIGN</span>
+            </h1>
+            <p class="subpage-desc" data-animate data-delay="1">
+                Textile graphics, placement prints, streetwear mockups, and merchandise typography. Fusing tactile apparel production with custom lettering systems across contemporary fashion-forward identities. Click below to launch the complete asset table.
+            </p>
+        </div>
+    </section>
+
+    <!-- CLIENT / PROJECT GRID (TRIGGERS CLIENT POP-UP TABLE) -->
+    <section class="section works-section">
+        <div class="container">
+            <div class="section-header" data-animate>
+                <div class="sh-left">
+                    <span class="sh-num">( 01 )</span>
+                    <h2 class="sh-title">Client Projects</h2>
+                </div>
+                <div class="sh-right">
+                    <span class="sh-num">Curated Collections</span>
+                </div>
+            </div>
+
+            <div class="category-projects-grid">
+
+                <!-- 01. Streetwear & Apparel Series (Full Merged Collection) -->
+                <div class="category-project-card" data-id="fashion" data-animate style="grid-column: 1 / -1;">
+                    <div class="cpc-image-wrap" style="aspect-ratio: 21/9;">
+                        <img src="Assets/fashion/thumb.svg" alt="Apparel Design Master Key Visual">
+                    </div>
+                    <div class="cpc-header">
+                        <span class="cpc-num">UNIFIED COLLECTION // 01</span>
+                        <span class="cpc-type">Streetwear &amp; Textile Graphics</span>
+                    </div>
+                    <div class="cpc-info">
+                        <h3 class="cpc-title" style="font-size: clamp(1.8rem, 3vw, 2.5rem);">Apparel Design — Streetwear &amp; Merchandise Series</h3>
+                        <p class="cpc-desc">A unified collection encompassing oversized back placement prints, garment mockups, heavy-cotton silhouettes, and custom metal/tribal merchandise lettering systems developed for local and international streetwear labels.</p>
+                    </div>
+                    <div class="cpc-footer">
+                        <span class="cpc-client">Client: Various Independent Labels (2025)</span>
+                        <span class="cpc-cta" style="font-size: 0.82rem;">Open Full Collection Table &amp; 12 Asset Plates →</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-inner">
+            <div class="f-logo">MFNH. &copy; 2026</div>
+            <div class="f-info">Bandung, West Java</div>
+            <div class="f-tag">Graphic &amp; Visual Designer - Junior Art Director</div>
+        </div>
+    </footer>
+
+    <!-- Dedicated Dynamic Pop-Up Modal Container -->
+    <div class="project-modal" id="projectModal" aria-hidden="true"></div>
+
+    <script src="projects-data.js"></script>
+    <script src="shared.js"></script>
+</body>
+
+</html>

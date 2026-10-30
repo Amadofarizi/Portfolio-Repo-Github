@@ -4,10 +4,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>M. Fariz Nabil Heryana | Graphic & Visual Designer - Junior Art Director</title>
+    <title>M. Fariz Nabil Heryana | Graphic &amp; Visual Designer - Junior Art Director</title>
     <meta name="description"
-        content="Portfolio of Muhammad Fariz Nabil Heryana — Graphic & Visual Designer - Junior Art Director based in Bandung.">
+        content="Portfolio of Muhammad Fariz Nabil Heryana — Graphic &amp; Visual Designer - Junior Art Director based in Bandung.">
     
+    <!-- Instant Session Loader Check & Fail-Safe Fallback -->
+    <script>
+        if (sessionStorage.getItem('hasLoaded') || sessionStorage.getItem('mfnh_site_loaded')) {
+            document.documentElement.classList.add('already-loaded');
+        } else {
+            // Absolute fail-safe: forces preloader to dismiss within 2.2s even if network hangs
+            window.__loaderTimeout = setTimeout(function() {
+                var l = document.getElementById('loader');
+                if (l && !l.classList.contains('hide')) {
+                    sessionStorage.setItem('hasLoaded', 'true');
+                    sessionStorage.setItem('mfnh_site_loaded', 'true');
+                    l.classList.add('hide');
+                    setTimeout(function() { l.style.display = 'none'; }, 400);
+                }
+            }, 2200);
+        }
+    </script>
+    <style>
+        html.already-loaded #loader, html.already-loaded .loader { display: none !important; }
+    </style>
+
     <!-- Google Fonts: Syne for display, Inter for body -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,7 +46,7 @@
         <div class="cursor-icon"></div>
     </div>
 
-    <!-- Loader -->
+    <!-- Loader (Only runs once on initial session entry) -->
     <div id="loader" class="loader">
         <div class="loader-marquee">
             <span class="loader-marquee-inner">
@@ -68,7 +89,7 @@
         </ul>
     </div>
 
-    <!-- HERO -->
+    <!-- HERO SECTION WITH TOP BIO & REFINED 3-COLUMN SPLIT -->
     <section id="home" class="hero">
         <!-- Premium Garnish -->
         <div class="garnish-crop top-left" aria-hidden="true"></div>
@@ -82,9 +103,10 @@
             </svg>
         </div>
 
-        <div class="hero-watermark" aria-hidden="true">DESIGNER &<br>DIRECTOR</div>
-        <div class="hero-grid-lines" aria-hidden="true"></div>
+        <div class="hero-watermark" aria-hidden="true">DESIGNER &amp;<br>DIRECTOR</div>
+
         <div class="container hero-container">
+            <!-- Top Availability Row -->
             <div class="hero-top">
                 <span class="hero-eyebrow">
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
@@ -95,6 +117,7 @@
                 </span>
             </div>
 
+            <!-- Main Oversized Editorial Headline -->
             <div class="hero-headline-wrapper">
                 <h1 class="hero-title" data-animate>
                     <span class="line-1">MUHAMMAD</span>
@@ -103,7 +126,8 @@
                 </h1>
             </div>
 
-            <div class="hero-bottom" data-animate data-delay="2">
+            <!-- Introduction Bio / Statement -->
+            <div class="hero-bottom" data-animate data-delay="1">
                 <div class="hero-abstract-shape">
                     <!-- Geometric stamp -->
                     <svg width="40" height="40" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
@@ -112,14 +136,67 @@
                 </div>
                 <div class="hero-desc-wrap">
                     <p class="hero-desc">
-                        A Graphic & Visual Designer - Junior Art Director focused on editorial aesthetics, brand campaigns, and striking corporate visuals. I craft high-contrast, premium narratives that connect strategy with bold execution.
+                        A Graphic &amp; Visual Designer and Junior Art Director specialized in editorial design, 360° brand campaigns, and high-impact visual identities. I engineer high-contrast, conceptually driven aesthetics that fuse strategic direction with bold execution.
                     </p>
                 </div>
             </div>
+
+            <!-- REFINED 3-COLUMN SPLIT-SCREEN SHOWCASE -->
+            <div class="hero-showcase" data-animate data-delay="2">
+                <div class="hero-columns-clean" id="heroColumns">
+
+                    <!-- Column 1: Art Direction -->
+                    <a href="art-direction.html" class="hcol-clean" id="heroCol1" data-category="art-direction">
+                        <div class="hcol-slider" id="slider-art"></div>
+                        <div class="hcol-overlay"></div>
+                        <div class="hcol-content">
+                            <span class="hcol-tag">01 // Domain</span>
+                            <h2 class="hcol-title">Art Direction<br>&amp; Campaigns</h2>
+                            <p class="hcol-desc">Music visual identity, editorial campaigns &amp; high-concept creative direction</p>
+                            <span class="hcol-btn">
+                                <span>Explore Domain</span>
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                            </span>
+                        </div>
+                    </a>
+
+                    <!-- Column 2: Graphic & Illustration -->
+                    <a href="graphic-illustration.html" class="hcol-clean" id="heroCol2" data-category="graphic-illustration">
+                        <div class="hcol-slider" id="slider-graphic"></div>
+                        <div class="hcol-overlay"></div>
+                        <div class="hcol-content">
+                            <span class="hcol-tag">02 // Domain</span>
+                            <h2 class="hcol-title">Graphic &amp;<br>Illustration</h2>
+                            <p class="hcol-desc">Brand systems, 360° event production, festival identities &amp; promotional craft</p>
+                            <span class="hcol-btn">
+                                <span>Explore Domain</span>
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                            </span>
+                        </div>
+                    </a>
+
+                    <!-- Column 3: Apparel Design (Category name: Apparel Design strictly) -->
+                    <a href="apparel-design.html" class="hcol-clean" id="heroCol3" data-category="apparel-design">
+                        <div class="hcol-slider" id="slider-apparel"></div>
+                        <div class="hcol-overlay"></div>
+                        <div class="hcol-content">
+                            <span class="hcol-tag">03 // Domain</span>
+                            <h2 class="hcol-title">Apparel<br>Design</h2>
+                            <p class="hcol-desc">Textile graphics, placement prints, streetwear mockups &amp; custom merchandise typography</p>
+                            <span class="hcol-btn">
+                                <span>Explore Domain</span>
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                            </span>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+
         </div>
     </section>
 
-    <!-- SELECTED WORKS -->
+    <!-- SELECTED WORKS (4-COLUMN COMPACT GRID WITH DIRECT POP-UP MODAL TRIGGER) -->
     <section id="work" class="section works-section">
         <!-- Premium Garnish -->
         <div class="garnish-label" aria-hidden="true">
@@ -138,16 +215,16 @@
                 <div class="sh-right">
                     <div class="filters">
                         <button class="filter-btn active" data-filter="all">All</button>
-                        <button class="filter-btn" data-filter="branding">Branding</button>
-                        <button class="filter-btn" data-filter="campaign">Campaign</button>
-                        <button class="filter-btn" data-filter="fashion">Fashion</button>
-                        <button class="filter-btn" data-filter="visual">Visual</button>
+                        <button class="filter-btn" data-filter="art-direction">Art Direction</button>
+                        <button class="filter-btn" data-filter="graphic-illustration">Graphic &amp; Illustration</button>
+                        <button class="filter-btn" data-filter="apparel-design">Apparel Design</button>
                     </div>
                 </div>
             </div>
 
-            <div class="works-grid" id="projectGrid">
-                <!-- Injected via JS -->
+            <!-- 4-Column Grid: Clicking opens modal pop-up table directly -->
+            <div class="works-grid-4col" id="projectGrid">
+                <!-- Injected via script.js -->
             </div>
         </div>
     </section>
@@ -226,7 +303,7 @@
                     <ul class="ex-list" id="servicesList">
                         <li class="ex-item" data-animate>
                             <div class="ex-item-head">
-                                <h5>Brand & Identity</h5>
+                                <h5>Brand &amp; Identity</h5>
                                 <span>01</span>
                             </div>
                             <p>Brand strategy, logo design, visual identity systems, and comprehensive brand guidelines.</p>
@@ -247,7 +324,7 @@
                         </li>
                         <li class="ex-item" data-animate>
                             <div class="ex-item-head">
-                                <h5>Editorial & Promo</h5>
+                                <h5>Editorial &amp; Promo</h5>
                                 <span>04</span>
                             </div>
                             <p>Print materials, digital ads, product promotions, and event visual identities.</p>
@@ -277,7 +354,7 @@
                         </li>
                         <li class="ex-item" data-animate data-delay="1">
                             <div class="ex-item-head">
-                                <h5>Graphic & Sound Designer</h5>
+                                <h5>Graphic &amp; Sound Designer</h5>
                                 <span>2025</span>
                             </div>
                             <span class="ex-company">Big Good Studio</span>
@@ -376,36 +453,15 @@
         <div class="container footer-inner">
             <div class="f-logo">MFNH. &copy; 2026</div>
             <div class="f-info">Bandung, West Java</div>
-            <div class="f-tag">Graphic & Visual Designer - Junior Art Director</div>
+            <div class="f-tag">Graphic &amp; Visual Designer - Junior Art Director</div>
         </div>
     </footer>
 
-    <!-- Project Detail Modal -->
-    <div class="project-modal" id="projectModal">
-        <button class="modal-close" id="modalClose">
-            <span>CLOSE</span>
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
-        </button>
-        <div class="modal-content">
-            <div class="modal-hero" id="modalHero">
-                <h2 class="modal-title" id="modalTitle">Project Title</h2>
-            </div>
-            <div class="container modal-body">
-                <div class="modal-meta" id="modalMeta"></div>
-                <div class="modal-desc" id="modalDesc"></div>
-                <div class="modal-gallery" id="modalGallery"></div>
-            </div>
-        </div>
-    </div>
+    <!-- Dedicated Dynamic Pop-Up Modal Container -->
+    <div class="project-modal" id="projectModal" aria-hidden="true"></div>
 
-    <!-- Lightbox -->
-    <div class="lightbox" id="lightbox">
-        <button class="lb-close" id="lbClose"><i class="fas fa-times"></i></button>
-        <img class="lb-img" id="lbImg" src="" alt="View">
-        <button class="lb-nav prev" id="lbPrev"><i class="fas fa-arrow-left"></i></button>
-        <button class="lb-nav next" id="lbNext"><i class="fas fa-arrow-right"></i></button>
-    </div>
-
+    <script src="projects-data.js"></script>
     <script src="script.js"></script>
 </body>
+
 </html>
