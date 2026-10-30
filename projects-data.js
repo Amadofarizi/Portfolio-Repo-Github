@@ -341,17 +341,14 @@ const MFNH_PROJECTS = {
 
 /* ─── ORDERED LIST FOR GRIDS ─── */
 const MFNH_PROJECTS_LIST = [
-    /* Art Direction */
-    MFNH_PROJECTS['suaraperempuan'],
-    MFNH_PROJECTS['eventcampaign'],
-    MFNH_PROJECTS['rtsr'],
-    MFNH_PROJECTS['albumcover'],
-    MFNH_PROJECTS['bbth'],
-    MFNH_PROJECTS['musicvideo'],
-    /* Graphic & Illustration */
-    MFNH_PROJECTS['kickfest'],
-    MFNH_PROJECTS['bankbjb'],
-    MFNH_PROJECTS['biofarma'],
-    /* Apparel Design */
-    MFNH_PROJECTS['fashion']
+    MFNH_PROJECTS['kickfest'],        /* 1. KICKFEST */
+    MFNH_PROJECTS['bankbjb'],         /* 2. bjb */
+    MFNH_PROJECTS['biofarma'],        /* 3. UPDATE IMUN */
+    MFNH_PROJECTS['fashion'],         /* 4. APPAREL DESIGN */
+    MFNH_PROJECTS['musicvideo'],      /* 5. MV */
+    MFNH_PROJECTS['bbth'],            /* 6. BBTH */
+    MFNH_PROJECTS['rtsr'],            /* 7. RTSR */
+    MFNH_PROJECTS['eventcampaign'],   /* 8. IMPARTAIRIAL */
+    MFNH_PROJECTS['albumcover'],      /* 9. ALBUM COVER */
+    MFNH_PROJECTS['suaraperempuan']   /* 10. SUARA PEREMPUAN */
 ];
